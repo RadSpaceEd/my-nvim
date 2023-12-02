@@ -7,8 +7,9 @@ Things added:
 * leap.nvim, a plugin for ultra fast navigation. 
 * gruvbox colorscheme, replace onedark
 * marksman, a neat language server for markdown
-* a few keymaps and configurations for markdown files 
+* markdown.nvim and a few keymaps for dealing with markdown files
 * guess-indent, replacing vim-sleuth
+* Harpoon
 
 Things that I removed 
 * vim-fugitive (I'm seeing if I want to replace it with lazygit)
@@ -18,11 +19,13 @@ Things that I removed
 TODO
 
 - [x] Deal with tasks lists on markdown files
-- [x] Fix bug: the x inside checkboxes and the TS highlight collor are the same... have to figure out how to change those colors on tx
+- [x] Fix bug: the x inside checkboxes and the TS highlight color are the same
+	- "Solved" it by explicitly changing the values of bg and fg on the `gruvbox.lua`... It should be solved within the parser for markdown.
 - [x] Convert already existing text into links
+- [x] Harpoon 
+  - It's configuration is a bit different, since I didn't manage to write everything inside the `config = ` block, so there's instalation on `harpoon.lua` and the keybindings and initialization at `keymaps.lua`)
+  - ThePrimaAgen uses the homerow as quick keymaps to access the files on Harpoon. But he uses Dvorak, and I use Colemak. Colemak has "I" and "O" on the homerow, of the right hand, and that would conflict with `<C-i>` and `<C-o>` for jumping to next/privious mark. So I the moved the keymaps one row above, so: `<C-l>`, `<C-u>`, `<C-y>` and `<C-;>`.
 - [ ] Git integration
-- [ ] Projects
-- [ ] Harpoon
 - [ ] SQL 
 - [ ] Undo tree 
 - [ ] Maybe somethign like Goyo for editing markdown files 
