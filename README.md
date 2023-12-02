@@ -17,7 +17,8 @@ Things that I removed
 
 TODO
 
-- [ ] Deal with tasks lists on markdown files
+- [x] Deal with tasks lists on markdown files
+- [ ] Fix bug: the x inside checkboxes and the TS highlight collor are the same... have to figure out how to change those colors on tx
 - [ ] Convert already existing text into links
 - [ ] Git integration
 - [ ] Projects
