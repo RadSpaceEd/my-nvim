@@ -4,7 +4,10 @@ return {
     config = function()
       vim.o.background = "dark"
       require("gruvbox").setup({
-        contrast = "hard"
+        contrast = "hard",
+        overrides = {
+          ["@text.todo"] = { bg = "#1d2021", fg = "#f9f5d7"}
+        }
       })
       vim.cmd([[colorscheme gruvbox]])
     end
