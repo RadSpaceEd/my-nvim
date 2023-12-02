@@ -1,4 +1,4 @@
-# My tidy nvim config
+# My tidy Neovim config
 
 This is based on [dam9000/kickstartc-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim). It takes kickstart-nvim and divides it up into multiple files, and I divide it even more, so that each plugin configuration has it's on file.
 
@@ -13,7 +13,7 @@ Things added:
 Things that I removed 
 * vim-fugitive (I'm seeing if I want to replace it with lazygit)
 * vim-rhubarb 
-* gitsigns (I don't like seeing the gutter that much... seeing if I keep it off or if it's usefullness outweights it's ugliness and waste of vertical space)
+* gitsigns (I don't like seeing the signcolumn that much... seeing if I keep it off or if it's usefullness outweights it's ugliness and waste of vertical space)
 
 TODO
 
