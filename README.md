@@ -23,7 +23,6 @@ TODO
 	- "Solved" it by explicitly changing the values of bg and fg on the `gruvbox.lua`... It should be solved within the parser for markdown.
 - [x] Convert already existing text into links
 - [x] Harpoon 
-  - It's configuration is a bit different, since I didn't manage to write everything inside the `config = ` block, so there's instalation on `harpoon.lua` and the keybindings and initialization at `keymaps.lua`)
   - ThePrimaAgen uses the homerow as quick keymaps to access the files on Harpoon. But he uses Dvorak, and I use Colemak. Colemak has "I" and "O" on the homerow, of the right hand, and that would conflict with `<C-i>` and `<C-o>` for jumping to next/privious mark. So I the moved the keymaps one row above, so: `<C-l>`, `<C-u>`, `<C-y>` and `<C-;>`.
 - [ ] Git integration
 - [ ] SQL 
