@@ -4,7 +4,6 @@
 -- See `:help vim.keymap.set()`
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
-
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
@@ -30,6 +29,7 @@ vim.keymap.set('n', 'N', "Nzzzv", { silent = true })
 -- Get out of terminal mode easier
 vim.keymap.set('t', '<Esc><Esc>', [[<C-\><C-n>]])
 
+vim.keymap.set('n', '<leader>t', ':ToggleTerm name=scratch direction=float<CR>', { desc = 'Toggle floating terminal'})
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
