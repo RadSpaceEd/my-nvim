@@ -26,6 +26,7 @@ return {
             i = {
               ['<C-u>'] = false,
               ['<C-d>'] = false,
+              ['<A-d>'] = require('telescope.actions').delete_buffer
             },
           },
         },
