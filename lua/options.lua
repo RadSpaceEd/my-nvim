@@ -37,6 +37,10 @@ vim.o.timeoutlen = 300
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
+-- On split, focus on the new window
+vim.o.splitbelow = true
+vim.o.splitright = true
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
@@ -48,8 +52,30 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+-- -- [[ Testing: Floating Buffer]]
+-- function CreateFloatBuf()
+--   local width = 150
+--   local height = 50
+--   local buf = vim.api.nvim_create_buf(false,true)
+--   local ui = vim.api.nvim_list_uis()[1]
+--   local opts = {relative= 'editor',
+--                    width = width,
+--                    height = height,
+--                    col = (ui.width/2) - (width/2),
+--                    row = (ui.height/2) - (height/2),
+--                    anchor = 'NW',
+--                    style = 'minimal',
+--                    border = 'single',
+--                    }
+--   local win = vim.api.nvim_open_win(buf,true,opts)
+--   vim.api.nvim_win_set_option(win,"winhighlight",('Normal:NormalNC'))
+--   -- TODO Turn it into a terminal
+--   -- TODO Run a command and don't die 
+--   -- TODO Esc
+-- end
+
 -- Disable line numbers on the terminal
-vim.api.nvim_create_autocmd({ "TermOpen" }, {command = "setlocal nonumber norelativenumber signcolumn=no "})
+vim.api.nvim_create_autocmd({ "TermOpen" }, {command = "setlocal nonumber norelativenumber signcolumn=no | startinsert "})
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
