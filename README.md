@@ -24,7 +24,12 @@ TODO
 - [x] Convert already existing text into links
 - [x] Harpoon 
   - ThePrimaAgen uses the homerow as quick keymaps to access the files on Harpoon. But he uses Dvorak, and I use Colemak. Colemak has "I" and "O" on the homerow, of the right hand, and that would conflict with `<C-i>` and `<C-o>` for jumping to next/privious mark. So I the moved the keymaps one row above, so: `<C-l>`, `<C-u>`, `<C-y>` and `<C-;>`.
-- [ ] Git integration
+- [x] Git integration
 - [ ] SQL 
 - [ ] Undo tree 
+- [ ] Better multiplexing capability
+  - [ ] Fork toggleterm.nvim
+    - [ ] Toggle floating terminals separatly from the others 
+    - [ ] Tab dependant terminals
+  - [ ] Project per tab
 - [ ] Maybe somethign like Goyo for editing markdown files 
