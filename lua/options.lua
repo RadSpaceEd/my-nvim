@@ -48,6 +48,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
+-- Disable line numbers on the terminal
+vim.api.nvim_create_autocmd({ "TermOpen" }, {command = "setlocal nonumber norelativenumber signcolumn=no "})
+
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 -- vim: ts=2 sts=2 sw=2 et
